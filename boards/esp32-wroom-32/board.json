@@ -1,0 +1,73 @@
+{
+  "name": "ESP32-WROOM",
+  "version": 1,
+  "description": "An entry-level ESP32 development board",
+  "author": "Andrea Diamantini",
+  "mcu": "esp32",
+  "fqbn": "esp32:esp32-wroom-32",
+
+  "width": 26.2,
+  "height": 61.6,
+
+  "pins": {
+    "3V3.1": { "x": 1.45, "y": 8.76, "target": "power(3.3)" },
+    "EN":    { "x": 1.45, "y": 11.31, "target": "CHIP_EN" },
+    "36":    { "x": 1.45, "y": 13.84, "target": "GPIO36" },
+    "39":    { "x": 1.45, "y": 16.38, "target": "GPIO39" },
+    "32":    { "x": 1.45, "y": 18.92, "target": "GPIO32" },
+    "33":    { "x": 1.45, "y": 21.46, "target": "GPIO33" },
+    "34":    { "x": 1.45, "y": 24.01, "target": "GPIO34" },
+    "23":    { "x": 1.45, "y": 26.54, "target": "GPIO23" },
+    "25":    { "x": 1.45, "y": 29.08, "target": "GPIO25" },
+    "26":    { "x": 1.45, "y": 31.62, "target": "GPIO26" },
+    "27":    { "x": 1.45, "y": 34.16, "target": "GPIO27" },
+    "14":    { "x": 1.45, "y": 36.71, "target": "GPIO14" },
+    "12":    { "x": 1.45, "y": 39.24, "target": "GPIO12" },
+    "13":    { "x": 1.45, "y": 41.78, "target": "GPIO13" },
+    "5V":    { "x": 1.45, "y": 44.32, "target": "power(5)" }, 
+    "GND.1": { "x": 1.45, "y": 46.86, "target": "GND" },
+    "15":    { "x": 24.6, "y": 57.02 , "target": "GPIO15" },
+    "2":     { "x": 24.6, "y": 54.48 , "target": "GPIO2" },
+    "GND.5": { "x": 24.6, "y": 51.94 , "target": "GND" },
+    "0":     { "x": 24.6, "y": 49.40 , "target": "GPIO0" },
+    "4":     { "x": 24.6, "y": 46.86, "target": "GPIO4" },
+    "16":    { "x": 24.6, "y": 44.32, "target": "GPIO16" },
+    "17":    { "x": 24.6, "y": 41.78, "target": "GPIO17" },
+    "3V3.3": { "x": 24.6, "y": 39.24, "target": "power(3.3)" },
+    "5":     { "x": 24.6, "y": 36.71, "target": "GPIO5" },
+    "18":    { "x": 24.6, "y": 34.16, "target": "GPIO18" },
+    "23":    { "x": 24.6, "y": 31.62, "target": "GPIO23" },
+    "19":    { "x": 24.6, "y": 29.08, "target": "GPIO19" },
+    "GND.4": { "x": 24.6, "y": 26.54, "target": "GND" },
+    "GND.3": { "x": 24.6, "y": 24.01, "target": "GND" },
+    "21":    { "x": 24.6, "y": 21.46, "target": "GPIO21" },
+    "22":    { "x": 24.6, "y": 18.92, "target": "GPIO22" },
+    "3V3.2": { "x": 24.6, "y": 16.38, "target": "power(3.3)" },
+    "3":     { "x": 24.6, "y": 13.84, "target": "GPIO3" },
+    "1":     { "x": 24.6, "y": 11.3, "target": "GPIO1" },
+    "GND.2": { "x": 24.6, "y": 8.76, "target": "GND" }
+  },
+
+  "leds": [
+    {
+      "id": "power",
+      "x": 20.2,
+      "y": 34.6,
+      "type": "0603",
+      "color": "red",
+      "pins": {
+        "A": "3V3",
+        "C": "GND.1"
+      }
+    },
+    {
+      "id": "rgb",
+      "x": 8.56,
+      "y": 40.6,
+      "type": "ws2812",
+      "pins": {
+        "DI": "5"
+      }
+    }
+  ]
+}
